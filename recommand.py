@@ -32,8 +32,8 @@ def recommander():
             "Collègue": 5,
         }
         sexe = {
-            "Homme": 1,
-            "Femme": 5
+            "Homme": 0,
+            "Femme": 6
         }
 
         occasion = {
