@@ -12,16 +12,16 @@ Ce projet est une application web de recommandation de cadeaux. Elle permet à l
 
 1. Clonez ce dépôt sur votre machine locale.
 2. Installez les dépendances nécessaires en exécutant la commande suivante :
-
+```
 pip install streamlit pandas
-
+```
 
 ## Utilisation
 
 Pour lancer l'application, exécutez la commande suivante dans votre terminal :
-
+```
 streamlit run main.py
-
+```
 
 Une fois l'application démarrée, vous pouvez interagir avec elle en répondant aux questions concernant le destinataire du cadeau :
 
@@ -53,6 +53,3 @@ Les contributions à ce projet sont les bienvenues. Si vous trouvez des bugs, de
 
 Merci d'utiliser cette application de recommandation de cadeaux. Nous espérons qu'elle vous aidera à trouver le cadeau parfait pour vos proches !
 
----
-
-N'hésitez pas à personnaliser le README en fonction de vos besoins et ajouter d'autres informations si nécessaire. Bonne continuation avec votre projet de recommandation de cadeaux ! Si vous avez d'autres questions ou besoin d'aide supplémentaire, n'hésitez pas à demander.
