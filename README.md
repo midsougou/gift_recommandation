@@ -1,8 +1,8 @@
-# Recommandation de cadeaux avec Python et Streamlit
+# Gift Recommendation with Python and Streamlit
 
-Ce projet est une application web de recommandation de cadeaux. Elle permet à l'utilisateur de fournir des informations sur le destinataire du cadeau et en retour, l'application propose des cadeaux qui pourraient convenir au destinataire en se basant sur des utilisateurs similaires. En plus d’être recommandé, l’utilisateur pourra participer à améliorer les résultats futurs de notre interface. Ainsi, un utilisateur qui n’est pas satisfait peut l’indiquer et aussi indiquer le cadeau finalement choisi.
+This project is a web application for gift recommendations. It allows the user to provide information about the gift recipient, and in return, the application suggests gifts that might suit the recipient based on similar users. In addition to receiving recommendations, the user can help improve future results of our interface. Thus, a user who is not satisfied can indicate it and also specify the gift they ultimately chose.
 
-## Prérequis
+## Prerequisites
 
 - Python 3.7
 - Streamlit
@@ -10,48 +10,47 @@ Ce projet est une application web de recommandation de cadeaux. Elle permet à l
 
 ## Installation
 
-1. Clonez ce dépôt sur votre machine locale.
-2. Installez les dépendances nécessaires en exécutant la commande suivante :
+1. Clone this repository to your local machine.
+2. Install the necessary dependencies by running the following command:
 ```
 pip install streamlit pandas
 ```
 
-## Utilisation
+## Usage
 
-Pour lancer l'application, exécutez la commande suivante dans votre terminal :
+To launch the application, run the following command in your terminal:
 ```
 streamlit run main.py
 ```
 
-Une fois l'application démarrée, vous pouvez interagir avec elle en répondant aux questions concernant le destinataire du cadeau :
+Once the application is running, you can interact with it by answering questions about the gift recipient:
 
-1. Choisissez le type de statut : **Recommander** ou **Retour expérience**.
-2. Répondez aux questions concernant le destinataire, telles que le genre, l'âge, l'occasion, le lieu préféré, la passion, la couleur préférée, la boisson préférée, l'animal préféré, et le mot qui représente le destinataire.
-3. Pour la fonction `Recommander`, l'application proposera alors les 5 meilleurs cadeaux en fonction des utilisateurs similaires.
-4. Pour la fonction `Retour expérience` vous pouvez également fournir un cadeau que vous avez reçu et donner vos préférences pour enrichir la base de données.
+1. Choose the status type: **Recommend** or **Experience Feedback**.
+2. Answer the questions about the recipient, such as gender, age, occasion, favorite place, passion, favorite color, favorite drink, favorite animal, and a word that represents the recipient.
+3. For the `Recommend` function, the application will then suggest the top 5 gifts based on similar users.
+4. For the `Experience Feedback` function, you can also provide a gift you received and give your preferences to enrich the database.
 
-## Données
+## Data
 
-Les données utilisées pour la recommandation sont stockées dans un fichier CSV nommé `db_test.csv`. Ce fichier contient les colonnes suivantes :
+The data used for recommendations is stored in a CSV file named `db_test.csv`. This file contains the following columns:
 
-- user_id : identifiant de l'utilisateur
-- destinataire : type de destinataire (Ami, Famille, Compagnon, Moi-même, Collègue)
-- sexe : genre du destinataire (Homme, Femme)
-- age : âge du destinataire
-- occasion : occasion pour offrir le cadeau (Mariage, Anniversaire, Noël, Professionel, Occasion particulière)
-- lieu : lieu préféré du destinataire pour passer les vacances
-- passion : passion du destinataire (Jeux-vidéos, Musique, Films, Sport, Lectures)
-- couleur : couleur préférée du destinataire (Bleu, Rouge, Noir, Blanc, Vert)
-- boisson : boisson préférée du destinataire (Café, Thé, Boisson gazeuse, Eau, Jus)
-- animal : animal préféré du destinataire (Koala, Tortue, Dauphin, Lion, Mouette)
-- mot : mot qui représente le destinataire (Résérvé, Indépendant, Romantique, Détendu, Travailleur)
-- item : cadeau recommandé ou reçu par le destinataire
+- user_id: user identifier
+- recipient: type of recipient (Friend, Family, Partner, Myself, Colleague)
+- gender: recipient's gender (Male, Female)
+- age: recipient's age
+- occasion: occasion for giving the gift (Wedding, Birthday, Christmas, Professional, Special occasion)
+- place: recipient’s favorite vacation destination
+- passion: recipient’s passion (Video games, Music, Movies, Sports, Reading)
+- color: recipient’s favorite color (Blue, Red, Black, White, Green)
+- drink: recipient’s favorite drink (Coffee, Tea, Soft drink, Water, Juice)
+- animal: recipient’s favorite animal (Koala, Turtle, Dolphin, Lion, Seagull)
+- word: a word that represents the recipient (Reserved, Independent, Romantic, Relaxed, Hardworking)
+- item: gift recommended or received by the recipient
 
 ## Contributions
 
-Les contributions à ce projet sont les bienvenues. Si vous trouvez des bugs, des améliorations possibles ou si vous avez des idées pour étendre les fonctionnalités, n'hésitez pas à me le faire savoir.
+Contributions to this project are welcome. If you find bugs, potential improvements, or have ideas to extend the features, feel free to let me know.
 
 ---
 
-Merci d'avoir utilisé cette application de recommandation de cadeaux. Nous espérons qu'elle vous aidera à trouver le cadeau parfait pour vos proches !
-
+Thank you for using this gift recommendation application. We hope it helps you find the perfect gift for your loved ones!
